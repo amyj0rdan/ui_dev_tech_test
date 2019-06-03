@@ -15,9 +15,23 @@ npm install
 
 ## Running tests
 
+#### To run unit tests
 Open `SpecRunner.html` in browser
 
+#### To run integration tests
+
+```bash
+./node_modules/.bin/cypress open
+```
+Then follow instructions to run tests.
+
 ## Usage
+
+```bash
+npm run server
+```
+
+Then visit [`localhost:8080`](http://localhost:8080/)
 
 ## Approach
 
