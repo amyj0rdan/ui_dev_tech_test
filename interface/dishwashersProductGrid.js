@@ -5,12 +5,17 @@ window.onload = function() {
     })
     .then(function(data) {
       const productGrid = new ProductGridModel()
-      var productsLength = data.products.length
+      const productsLength = data.products.length
       for (let i = 0; i < productsLength; i++) {
+        if (typeof data.products[i].price.now === 'string') {
+          var price = data.products[i].price.now
+        } else {
+          var price = data.products[i].price.now.from + " - " + data.products[i].price.now.to
+        }
         productGrid.add({productID: data.products[i].productId,
-                              title: data.products[i].title,
-                              imageURL: data.products[i].image,
-                              price: data.products[i].price.now})
+                          title: data.products[i].title,
+                          imageURL: data.products[i].image,
+                          price: price})
       }
       const productGridView = new ProductGridView(productGrid)
       document.getElementById("products").innerHTML = productGridView.createHTML()

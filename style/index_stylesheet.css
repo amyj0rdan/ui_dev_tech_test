@@ -17,6 +17,7 @@ h1 {
 
 span {
   display: block;
+  text-align: left;
 }
 
 #product-price {
@@ -29,12 +30,16 @@ span {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0;
 }
 
 .product-square {
-  width: 22%;
-  display: block;
+  width: 20rem;
   padding: 0.5rem;
+  border-style: solid;
+  border-width: thin;
+  border-color: #E8E8E8;
+  text-align: center;
 }
 
 img {
