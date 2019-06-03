@@ -13,7 +13,7 @@ describe("ProductGridView", function() {
                                   return "https://www.johnlewis.com/"
                                 },
                                 getPrice: function() {
-                                  return 100;
+                                  return "100.00";
                                 }
                               }]
         return productModelMocks;
@@ -31,7 +31,7 @@ describe("ProductGridView", function() {
                                   return "https://www.johnlewis.com/"
                                 },
                                 getPrice: function() {
-                                  return 100;
+                                  return "100.00";
                                 }
                               },
                               { getProductID: function() {
@@ -44,7 +44,7 @@ describe("ProductGridView", function() {
                                   return "https://www.johnlewis.com/"
                                 },
                                 getPrice: function() {
-                                  return 200;
+                                  return "200.00";
                                 }
                               }
                             ]

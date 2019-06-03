@@ -7,11 +7,11 @@ describe("End to end test", function() {
     productGridModel.add({productID: 1,
                           title: "Test product model",
                           imageURL: "https://www.johnlewis.com/",
-                          price: 100.00})
+                          price: "100.00"})
     productGridModel.add({productID: 2,
                           title: "Test product model 2",
                           imageURL: "https://www.johnlewis.com/",
-                          price: 200.00})
+                          price: "200.00"})
     productGridView = new ProductGridView(productGridModel)
   })
 
