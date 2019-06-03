@@ -13,4 +13,15 @@ describe("productModel", function() {
                       .not.toThrowError()
     })
   })
+
+  describe("#getProductID", function() {
+    it("can return productID", function() {
+      productModel = new ProductModel({
+                      productID: 1,
+                      title: "Test product model",
+                      imageURL: "https://www.johnlewis.com/",
+                      price: 100.00})
+      expect(productModel.getProductID()).toEqual(1)
+    })
+  })
 })

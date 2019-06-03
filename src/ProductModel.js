@@ -1,6 +1,12 @@
 function ProductModel({productID, title, imageURL, price}) {
-  this.productID = productID;
-  this.title = title;
-  this.imageURL = imageURL;
-  this.price = price;
+  this._productID = productID;
+  this._title = title;
+  this._imageURL = imageURL;
+  this._price = price;
+}
+
+ProductModel.prototype = {
+  getProductID: function() {
+    return this._productID;
+  }
 }
