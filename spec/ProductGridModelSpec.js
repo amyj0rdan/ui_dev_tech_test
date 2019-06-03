@@ -26,4 +26,10 @@ describe("ProductGridModel", function() {
       expect(productGridModel._products.length).toEqual(2)
     })
   })
+
+  describe("#getProducts", function() {
+    it("returns empty array when no ProductModels have been created", function() {
+      expect(productGridModel.getProducts()).toEqual([])
+    })
+  })
 })
