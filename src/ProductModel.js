@@ -12,5 +12,9 @@ ProductModel.prototype = {
 
   getTitle: function() {
     return this._title;
+  },
+
+  getImageURL: function() {
+    return this._imageURL;
   }
 }

@@ -21,4 +21,10 @@ describe("productModel", function() {
       expect(productModel.getTitle()).toEqual("Test product model");
     })
   })
+
+  describe("#getImageURL", function() {
+    it("can return image URL", function() {
+      expect(productModel.getImageURL()).toEqual("https://www.johnlewis.com/")
+    })
+  })
 })
