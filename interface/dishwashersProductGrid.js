@@ -4,20 +4,15 @@ window.onload = function() {
       return response.json()
     })
     .then(function(data) {
-      const dishwasherGrid = new ProductGridModel()
-      document.getElementById("dishwashers").innerHTML = "Changing during this request"
+      const productGrid = new ProductGridModel()
       var productsLength = data.products.length
       for (let i = 0; i < productsLength; i++) {
-        dishwasherGrid.add({productID: data.products[i].productId,
+        productGrid.add({productID: data.products[i].productId,
                               title: data.products[i].title,
                               imageURL: data.products[i].image,
                               price: data.products[i].price.now})
-        console.log("ProductID: " + data.products[i].productId)
-        console.log("Title: " + data.products[i].title)
-        console.log("Price: " + data.products[i].price.now)
-        console.log("Image URL: " + data.products[i].image)
       }
-      const dishwasherGridView = new ProductGridView(dishwasherGrid)
-      document.getElementById("dishwashers").innerHTML = dishwasherGridView.createHTML()
+      const productGridView = new ProductGridView(productGrid)
+      document.getElementById("products").innerHTML = productGridView.createHTML()
     })
 }
