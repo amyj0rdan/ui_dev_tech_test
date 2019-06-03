@@ -3,7 +3,8 @@ describe("ProductGridModel", function() {
   var productGridModel;
 
   beforeEach(function(){
-    productGridModel = new ProductGridModel();
+    function ProductModelMock({productID, title, imageURL, price}) {}
+    productGridModel = new ProductGridModel(ProductModelMock);
   })
 
   describe("#add", function() {
