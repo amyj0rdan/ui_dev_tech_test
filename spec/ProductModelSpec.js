@@ -1,4 +1,4 @@
-describe("productModel", function() {
+describe("ProductModel", function() {
 
   var productModel;
 
