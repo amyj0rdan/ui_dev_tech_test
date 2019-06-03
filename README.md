@@ -79,3 +79,15 @@ eg.
 ```bash
 ./node_modules/.bin/eslint src/ProductModel.js
 ```
+
+Or
+
+```bash
+npx eslint [file or directory]
+```
+
+eg.
+
+```bash
+npx eslint lib
+```
