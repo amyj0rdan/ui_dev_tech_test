@@ -8,5 +8,9 @@ function ProductModel({productID, title, imageURL, price}) {
 ProductModel.prototype = {
   getProductID: function() {
     return this._productID;
+  },
+
+  getTitle: function() {
+    return this._title;
   }
 }
