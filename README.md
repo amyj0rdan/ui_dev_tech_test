@@ -4,15 +4,18 @@
 
 Your task is to create a website that will allow customers to see the range of dishwashers John Lewis sells. This app will be a simple to use and will make use of existing John Lewis APIs.
 
-[Getting started](#getting-started) | [Running tests](#running-tests) | [Usage](#usage) | [Approach](#approach)
+[Getting started](#getting-started) | [Running tests](#running-tests) | [Usage](#usage) | [Approach](#approach) | [Other](#other)
 
 ## Getting started
 
 ```bash
 git clone https://github.com/amyj0rdan/ui_dev_tech_test
+npm install
 ```
 
 ## Running tests
+
+Open `SpecRunner.html` in browser
 
 ## Usage
 
@@ -62,3 +65,17 @@ I then considered how I would extend this for the optional Product Page part of 
 | ------ | ------ |
 | createHTML | returns div of HTML |
 | *state* | *productIndividualModel* |
+
+## Other
+
+#### To run linter
+
+```bash
+./node_modules/.bin/eslint filepath/file
+```
+
+eg.
+
+```bash
+./node_modules/.bin/eslint src/ProductModel.js
+```
