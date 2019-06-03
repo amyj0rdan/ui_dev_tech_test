@@ -16,5 +16,9 @@ ProductModel.prototype = {
 
   getImageURL: function() {
     return this._imageURL;
+  },
+
+  getPrice: function() {
+    return this._price;
   }
 }

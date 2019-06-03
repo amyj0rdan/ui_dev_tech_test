@@ -27,4 +27,10 @@ describe("productModel", function() {
       expect(productModel.getImageURL()).toEqual("https://www.johnlewis.com/")
     })
   })
+
+  describe("#getPrice", function() {
+    it("can return price", function() {
+      expect(productModel.getPrice()).toEqual(100)
+    })
+  })
 })
