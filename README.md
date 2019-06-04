@@ -20,9 +20,18 @@ Open `SpecRunner.html` in browser
 
 #### To run integration tests
 
+Run server:
+
+```bash
+npm run server
+```
+
+Then in a separate terminal:
+
 ```bash
 ./node_modules/.bin/cypress open
 ```
+
 Then follow instructions to run tests.
 
 ## Usage
