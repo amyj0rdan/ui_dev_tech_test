@@ -25,4 +25,10 @@ describe("ProductIndividualModel", function() {
       expect(productIndividualModel.getMedia()).toEqual("https://www.johnlewis.com/")
     })
   })
+
+  describe("#getPrice", function() {
+    it("can return product price", function() {
+      expect(productIndividualModel.getPrice()).toEqual("100.00")
+    })
+  })
 })

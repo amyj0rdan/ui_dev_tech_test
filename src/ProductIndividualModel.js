@@ -16,5 +16,9 @@ ProductIndividualModel.prototype = {
 
   getMedia: function() {
     return this._media;
+  },
+
+  getPrice: function() {
+    return this._price;
   }
 }
