@@ -12,5 +12,9 @@ function ProductIndividualModel({title, media, price, productInformation,
 ProductIndividualModel.prototype = {
   getTitle: function() {
     return this._title;
+  },
+
+  getMedia: function() {
+    return this._media;
   }
 }
