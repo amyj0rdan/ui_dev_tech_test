@@ -8,3 +8,9 @@ function ProductIndividualModel({title, media, price, productInformation,
   this._includedServices = includedServices;
   this._code = code;
 }
+
+ProductIndividualModel.prototype = {
+  getTitle: function() {
+    return this._title;
+  }
+}
