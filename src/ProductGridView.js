@@ -11,3 +11,5 @@ ProductGridView.prototype = {
     return div
   }
 }
+
+module.exports = ProductGridView;

@@ -1,3 +1,5 @@
+const ProductModel = require('./ProductModel.js')
+
 function ProductGridModel(productModel) {
   this.productModel = productModel || ProductModel
   this._products = []
@@ -12,3 +14,4 @@ ProductGridModel.prototype = {
     return this._products;
   }
 }
+module.exports = ProductGridModel;

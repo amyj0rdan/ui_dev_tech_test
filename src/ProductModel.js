@@ -22,3 +22,5 @@ ProductModel.prototype = {
     return this._price;
   }
 }
+
+module.exports = ProductModel;
