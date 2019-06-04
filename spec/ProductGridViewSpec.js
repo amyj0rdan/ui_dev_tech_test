@@ -61,10 +61,10 @@ describe("ProductGridView", function() {
 
   describe("#createHTML", function() {
     it("returns an HTML div for one product", function() {
-      expect(productGridViewOneProduct.createHTML()).toEqual(`<div class="product-square" id="1"><img src="https://www.johnlewis.com/"><span id="product-title">Mock product model</span><span id="product-price">£100.00</span></div>`)
+      expect(productGridViewOneProduct.createHTML()).toEqual(`<div id="products"><div class="product-square" id="1"><img src="https://www.johnlewis.com/"><span id="product-title">Mock product model</span><span id="product-price">£100.00</span></div></div>`)
     })
     it("returns an HTML div for two products", function() {
-      expect(productGridViewTwoProducts.createHTML()).toEqual(`<div class="product-square" id="1"><img src="https://www.johnlewis.com/"><span id="product-title">Mock product model</span><span id="product-price">£100.00</span></div><div class="product-square" id="2"><img src="https://www.johnlewis.com/"><span id="product-title">Mock product model 2</span><span id="product-price">£200.00</span></div>`)
+      expect(productGridViewTwoProducts.createHTML()).toEqual(`<div id="products"><div class="product-square" id="1"><img src="https://www.johnlewis.com/"><span id="product-title">Mock product model</span><span id="product-price">£100.00</span></div><div class="product-square" id="2"><img src="https://www.johnlewis.com/"><span id="product-title">Mock product model 2</span><span id="product-price">£200.00</span></div></div>`)
     })
   })
 })

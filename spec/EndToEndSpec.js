@@ -16,7 +16,7 @@ describe("End to end test", function() {
   })
 
   it("can return an HTML div", function() {
-    expect(productGridView.createHTML()).toEqual(`<div class="product-square" id="1"><img src="https://www.johnlewis.com/"><span id="product-title">Test product model</span><span id="product-price">£100.00</span></div><div class="product-square" id="2"><img src="https://www.johnlewis.com/"><span id="product-title">Test product model 2</span><span id="product-price">£200.00</span></div>`)
+    expect(productGridView.createHTML()).toEqual(`<div id="products"><div class="product-square" id="1"><img src="https://www.johnlewis.com/"><span id="product-title">Test product model</span><span id="product-price">£100.00</span></div><div class="product-square" id="2"><img src="https://www.johnlewis.com/"><span id="product-title">Test product model 2</span><span id="product-price">£200.00</span></div></div>`)
   })
 
 
