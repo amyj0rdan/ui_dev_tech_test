@@ -28,5 +28,9 @@ ProductIndividualModel.prototype = {
 
   getSpecialOffer: function() {
     return this._displaySpecialOffer;
+  },
+
+  getIncludedServices: function() {
+    return this._includedServices;
   }
 }

@@ -43,4 +43,10 @@ describe("ProductIndividualModel", function() {
       expect(productIndividualModel.getSpecialOffer()).toEqual("<div>Deal</div>")
     })
   })
+
+  describe("#getIncludedServices", function() {
+    it("can return included services", function() {
+      expect(productIndividualModel.getIncludedServices()).toEqual("2 year guarantee")
+    })
+  })
 })
