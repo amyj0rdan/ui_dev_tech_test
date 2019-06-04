@@ -31,4 +31,10 @@ describe("ProductIndividualModel", function() {
       expect(productIndividualModel.getPrice()).toEqual("100.00")
     })
   })
+
+  describe("#getProductInformation", function() {
+    it("can return product information", function() {
+      expect(productIndividualModel.getProductInformation()).toEqual("<div>Test product information</div>")
+    })
+  })
 })

@@ -20,5 +20,9 @@ ProductIndividualModel.prototype = {
 
   getPrice: function() {
     return this._price;
+  },
+
+  getProductInformation: function() {
+    return this._productInformation;
   }
 }
