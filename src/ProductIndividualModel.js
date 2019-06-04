@@ -32,5 +32,9 @@ ProductIndividualModel.prototype = {
 
   getIncludedServices: function() {
     return this._includedServices;
+  },
+
+  getCode: function() {
+    return this._code;
   }
 }

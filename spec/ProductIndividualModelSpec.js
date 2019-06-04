@@ -49,4 +49,10 @@ describe("ProductIndividualModel", function() {
       expect(productIndividualModel.getIncludedServices()).toEqual("2 year guarantee")
     })
   })
+
+  describe("#getCode", function() {
+    it("can return product code", function() {
+      expect(productIndividualModel.getCode()).toEqual("1234")
+    })
+  })
 })
