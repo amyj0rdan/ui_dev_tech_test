@@ -18,6 +18,8 @@ window.onload = function() {
                           price: price})
       }
       const productGridView = new ProductGridView(productGrid)
+      document.getElementById("page-header").innerHTML = "<h1>Dishwashers</h1>"
       document.getElementById("products").innerHTML = productGridView.createHTML()
+      individualProductPage()
     })
 }
