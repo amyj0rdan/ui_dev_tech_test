@@ -32,7 +32,7 @@ describe("ProductPageView", function() {
 
   describe("#createPriceHTML", function() {
     it("returns HTML div", function(){
-      expect(productPageView.createPriceHTML()).toEqual(`<div class="product-price-details"><img src="https://www.johnlewis.com/"/><span class="product-price">100.00</span><span class="product-special-offer">Deal</span></div>`)
+      expect(productPageView.createPriceHTML()).toEqual(`<div class="product-price-details"><img src="https://www.johnlewis.com/"/><span class="product-price">£100.00</span><span class="product-special-offer">Deal</span></div>`)
     })
   })
 

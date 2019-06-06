@@ -8,8 +8,18 @@ function individualProductPage() {
         return response.json()
       })
       .then(function(data) {
-        document.getElementById("page-header").innerHTML = `<h1>${data.title}</h1>`
-        document.getElementById("products").innerHTML = `${data.details.productInformation}`
+        console.log(data.media)
+        const product = new ProductIndividualModel({title: data.title,
+                                                    media: data.media.images.urls[0],
+                                                    price: data.price.now,
+                                                    productInformation: data.details.productInformation,
+                                                    displaySpecialOffer: data.displaySpecialOffer,
+                                                    includedServices: data.additionalServices.includedServices,
+                                                    code: data.code
+                                                  })
+        const productPageView = new ProductPageView(product)
+        document.getElementById("page-header").innerHTML = `<h1>${product.getTitle()}</h1>`
+        document.getElementById("products").innerHTML = productPageView.createPriceHTML() + productPageView.createProductInformationHTML()
       })
   }
 
