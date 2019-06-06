@@ -8,9 +8,9 @@ function individualProductPage() {
         return response.json()
       })
       .then(function(data) {
-        console.log(data.media)
         const product = new ProductIndividualModel({title: data.title,
                                                     media: data.media.images.urls[0],
+                                                    mediaAlt: data.media.images.altText,
                                                     price: data.price.now,
                                                     productInformation: data.details.productInformation,
                                                     displaySpecialOffer: data.displaySpecialOffer,

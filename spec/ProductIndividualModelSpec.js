@@ -6,6 +6,7 @@ describe("ProductIndividualModel", function() {
     productIndividualModel = new ProductIndividualModel({
                                                   title: "Test product title",
                                                   media: "https://www.johnlewis.com/",
+                                                  mediaAlt: "John Lewis website",
                                                   price: "100.00",
                                                   productInformation: "<div>Test product information</div>",
                                                   displaySpecialOffer: "<div>Deal</div>",
@@ -23,6 +24,12 @@ describe("ProductIndividualModel", function() {
   describe("#getMedia", function() {
     it("can return product media", function() {
       expect(productIndividualModel.getMedia()).toEqual("https://www.johnlewis.com/")
+    })
+  })
+
+  describe("getMediaAlt", function() {
+    it("can return product media alternative text", function() {
+      expect(productIndividualModel.getMediaAlt()).toEqual("John Lewis website")
     })
   })
 
