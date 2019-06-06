@@ -1,0 +1,38 @@
+describe("ProductPageView", function() {
+
+  var productPageView;
+
+  beforeEach(function() {
+    function ProductIndividualMock() {
+      this.getTitle = function() {
+        return "Test product title";
+      },
+      this.getMedia = function() {
+        return "https://www.johnlewis.com/";
+      },
+      this.getPrice = function() {
+        return "100.00";
+      },
+      this.getProductInformation = function() {
+        return "<div>Test product information</div>";
+      }
+      this.getSpecialOffer = function() {
+        return "Deal";
+      }
+      this.getIncludedServices = function() {
+        return "2 year guarantee";
+      }
+      this.getCode = function() {
+        return "1234"
+      }
+    }
+    var productIndividualMock = new ProductIndividualMock()
+    productPageView = new ProductPageView(productIndividualMock);
+  })
+
+  describe("#createPriceHTML", function() {
+    it("returns HTML div", function(){
+      expect(productPageView.createPriceHTML()).toEqual(`<img src="https://www.johnlewis.com/"/><span class="product-price">100.00</span><span class="product-special-offer">Deal</span>`)
+    })
+  })
+})
