@@ -18,7 +18,8 @@ function individualProductPage() {
                                                     code: data.code
                                                   })
         const productPageView = new ProductPageView(product)
-        document.getElementById("page-header").innerHTML = `<h1>${product.getTitle()}</h1>`
+        const backButton = `<div class="back-button"><button id="back-button" onClick="window.location.reload();"><</button></div>`
+        document.getElementById("page-header").innerHTML = backButton + `<h1>${product.getTitle()}</h1>`
         console.log(productPageView.createPriceHTML())
         console.log(productPageView.createProductInformationHTML())
         console.log(productPageView.createPriceHTML() + productPageView.createProductInformationHTML())

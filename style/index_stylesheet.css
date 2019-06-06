@@ -93,3 +93,17 @@ span {
 #product-information, #product-code {
   color: #686868;
 }
+
+#back-button {
+  background:none;
+  color:inherit;
+  border:none;
+  padding:0!important;
+  font: inherit;
+  font-size: 2rem;
+}
+
+.back-button {
+  position: absolute;
+  padding: 1.3rem;
+}
