@@ -81,7 +81,7 @@ span {
 
 #product-information-header {
   font-size: 2rem;
-  color: #A9A9A9;
+  color: #606060;
   padding-bottom: 1rem;
 }
 
@@ -91,14 +91,14 @@ span {
 }
 
 #product-information, #product-code {
-  color: #686868;
+  color: #505050;
 }
 
 #back-button {
   background:none;
   color:inherit;
   border:none;
-  padding:0!important;
+  padding:0;
   font: inherit;
   font-size: 2rem;
 }
@@ -106,4 +106,8 @@ span {
 .back-button {
   position: absolute;
   padding: 1.3rem;
+}
+
+strong {
+  font-weight: normal;
 }
