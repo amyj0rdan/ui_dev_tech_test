@@ -19,7 +19,7 @@ function individualProductPage() {
                                                   })
         const productPageView = new ProductPageView(product)
         document.getElementById("page-header").innerHTML = `<h1>${product.getTitle()}</h1>`
-        document.getElementById("products").innerHTML = productPageView.createPriceHTML() + productPageView.createProductInformationHTML()
+        document.getElementById("body").innerHTML = productPageView.createPriceHTML() + productPageView.createProductInformationHTML()
       })
   }
 
