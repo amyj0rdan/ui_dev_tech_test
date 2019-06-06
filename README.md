@@ -29,7 +29,7 @@ npm run server
 Then in a separate terminal:
 
 ```bash
-./node_modules/.bin/cypress open
+npm run cypress
 ```
 
 Then follow instructions to run tests.
