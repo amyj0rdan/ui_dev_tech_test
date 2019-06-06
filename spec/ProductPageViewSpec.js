@@ -17,7 +17,7 @@ describe("ProductPageView", function() {
         return "100.00";
       },
       this.getProductInformation = function() {
-        return "<div>Test product information</div>";
+        return "<p>Test product information</p>";
       }
       this.getSpecialOffer = function() {
         return "Deal";
@@ -35,13 +35,13 @@ describe("ProductPageView", function() {
 
   describe("#createPriceHTML", function() {
     it("returns HTML div", function(){
-      expect(productPageView.createPriceHTML()).toEqual(`<div class="product-price-details"><img class="individual-product-image" src="https://www.johnlewis.com/" alt="John Lewis website"/><div class="price-details"><span class="product-price">£100.00</span><span class="product-special-offer">Deal</span></div></div>`)
+      expect(productPageView.createPriceHTML()).toEqual(`<div class="product-price-details"><img id="individual-product-image" src="https://www.johnlewis.com/" alt="John Lewis website"/><div class="price-details"><span class="product-price">£100.00</span><span class="product-special-offer">Deal</span></div></div>`)
     })
   })
 
   describe("#createProductInformationHTML", function() {
     it("returns HTML div", function() {
-      expect(productPageView.createProductInformationHTML()).toEqual(`<div class="product-information><span class="product-information-header">Product Information</span><span class="product-code">Product code: 1234</span><span class="product-information"><div>Test product information</div></span></div>`)
+      expect(productPageView.createProductInformationHTML()).toEqual(`<div class="product-information"><span id="product-information-header">Product information</span><span id="product-code">Product code: 1234</span><span id="product-information"><p>Test product information</p></span></div>`)
     })
   })
 })

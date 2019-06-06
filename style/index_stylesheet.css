@@ -36,6 +36,10 @@ span {
   flex-direction: row;
 }
 
+.price-details {
+  padding-left: 4rem;
+}
+
 .product-special-offer {
   color: #880000;
   font-weight: bolder;
@@ -59,15 +63,25 @@ span {
   text-align: center;
 }
 
-img {
+#grid-product-image {
   width: 80%;
 }
 
-.individual-product-image {
-  height: 10%;
+#individual-product-image {
+  width: 60%;
+  align-self: center;
 }
 
-.product-information-header {
-  font-size: 1rem;
+#product-information-header {
+  font-size: 2rem;
   color: #A9A9A9;
+  padding-bottom: 1rem;
+}
+
+#product-information-header, #product-information, #product-code {
+  padding-left: 3rem;
+}
+
+#product-information, #product-code {
+  color: #686868;
 }
