@@ -26,7 +26,7 @@ span {
 
 .product-price {
   font-weight: bolder;
-  font-size: 1.75rem;
+  font-size: 3rem;
 }
 
 .product-price-details {
@@ -54,8 +54,9 @@ span {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   margin: 0;
+  width: 105%;
 }
 
 .product-square {
@@ -71,6 +72,10 @@ span {
 
 #grid-product-image {
   width: 80%;
+}
+
+#product-title, #product-price {
+  padding-left: 0.5rem;
 }
 
 #individual-product-image {
@@ -110,4 +115,22 @@ span {
 
 strong {
   font-weight: normal;
+}
+
+@media only screen and (orientation: portrait) {
+  .product-square {
+    width: 47%;
+  }
+
+  .product-price-details {
+    padding-top: 5rem;
+    width: 100%;
+    display: block;
+  }
+
+  .price-details {
+    padding-left: 3rem;
+    padding-bottom: 3rem;
+    border-top: 1rem solid #E8E8E8;
+  }
 }

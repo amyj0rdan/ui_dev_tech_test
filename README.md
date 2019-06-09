@@ -112,5 +112,17 @@ npx eslint [file or directory]
 eg.
 
 ```bash
-npx eslint lib
+npx eslint src
 ```
+
+## Next steps and future considerations
+
+- Functionality/styling not yet implemented:
+  - Improve CSS - improve margin spacing around product grid (Reset CSS? Clear all margins from all elements?), fixed location of product descriptions/prices, improve dynamic changes for portrait and landscape.
+  - Product page image carousel - CSS element and interactive JS.
+  - Product specification section - store information in productIndividualModel?
+
+- If I was to do this project again, I would probably make the following changes:
+  - Classes using ES6 rather than functions: the functions I have created are essentially behaving as classes.
+  - Classes running in the server side rather than the client side: the functions store the data from the API and create the HTML which is input into the HTML template. Accessing the API, storing the data and creating the HTML could be done on the server side and then only interactivity with the page done on the client side.
+  - Therefore I would run the app on a server rather than as a single page app. I explored using Express ([see branch](https://github.com/amyj0rdan/ui_dev_tech_test/tree/express)), but decided as time was limited, I would continue with the app on the client side. I would probably use something like Handlebars to insert HTML generated server side into my HTML template.
